@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC - GetCountryCode</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a8a59a97-f9c4-44f3-8db6-82c4ecc309d7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1a23b5f2-a7d7-40f7-a00f-c030e0932cff</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'United States'</defaultValue>
+      <description></description>
+      <id>1a23b5f2-a7d7-40f7-a00f-c030e0932cff</id>
+      <masked>false</masked>
+      <name>countryName</name>
+   </variable>
+</TestCaseEntity>

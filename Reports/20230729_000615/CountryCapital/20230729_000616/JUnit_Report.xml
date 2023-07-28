@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="CountryCapital" time="4.064" tests="2" failures="0" errors="0">
+   <testsuite name="CountryCapital" tests="2" failures="0" errors="0" time="4.064" skipped="0" timestamp="2023-07-29 00:06:30" hostname="acer - anehsialan" id="Test Suites/CountryCapital">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Katalon\\API Testing - Latihan\\Reports\\20230729_000615\\CountryCapital\\20230729_000616"/>
+         <property name="logFiles" value="D:\\Katalon\\API Testing - Latihan\\Reports\\20230729_000615\\CountryCapital\\20230729_000616\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="acer - anehsialan"/>
+         <property name="hostAddress" value="192.168.161.170"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="8.6.5.208"/>
+      </properties>
+      <testcase name="Test Cases/TC - GetCountryCode" time="2.843" classname="Test Cases/TC - GetCountryCode" status="PASSED">
+         <system-out><![CDATA[2023-07-29 00:06:30 - [TEST_CASE][PASSED] - Test Cases/TC - GetCountryCode: Test Cases/TC - GetCountryCode
+
+2023-07-29 00:06:31 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode", ["countryName":countryName])): Send request successfully
+
+2023-07-29 00:06:33 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\CountryCapital\20230729_000616\requests\main\0.har
+
+2023-07-29 00:06:33 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:06:33 - [TEST_STEP][PASSED] - ctrN = getElementPropertyValue(response1, "CountryISOCodeResponse.CountryISOCodeResult"): null
+
+2023-07-29 00:06:33 - [TEST_STEP][PASSED] - println("value of country code is ; " + ctrN): null
+
+2023-07-29 00:06:33 - [TEST_STEP][PASSED] - COUNTRY_CODE = ctrN: null
+
+2023-07-29 00:06:33 - [TEST_STEP][PASSED] - println("Global variable is ; " + COUNTRY_CODE): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC - GetCapital" time="0.87" classname="Test Cases/TC - GetCapital" status="PASSED">
+         <system-out><![CDATA[2023-07-29 00:06:33 - [TEST_CASE][PASSED] - Test Cases/TC - GetCapital: Test Cases/TC - GetCapital
+
+2023-07-29 00:06:33 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity", ["countryCode":COUNTRY_CODE])): Send request successfully
+
+2023-07-29 00:06:34 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\CountryCapital\20230729_000616\requests\main\1.har
+
+2023-07-29 00:06:34 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:06:34 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", "Washington"): Verify element text successfully
+
+2023-07-29 00:06:34 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-07-29 00:06:30 - [TEST_SUITE][PASSED] - CountryCapital: Test Cases/TC - GetCapital]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

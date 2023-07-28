@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>LookupCity</name>
+   <tag></tag>
+   <elementGuidId>02c25ca1-0e37-410d-bbf7-e2c2f48b3a8b</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>SOAPAction</name>
+      <type>Main</type>
+      <value>http://tempuri.org/SOAP.Demo.LookupCity</value>
+      <webElementGuid>7e77b253-5e69-4963-abda-4792d8b47347</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>text/xml; charset=utf-8</value>
+      <webElementGuid>1bdc8f25-40d4-400c-9bec-a77ffb410a28</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.5</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <restRequestMethod></restRequestMethod>
+   <restUrl></restUrl>
+   <serviceType>SOAP</serviceType>
+   <soapBody>&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tem=&quot;http://tempuri.org&quot;>
+   &lt;soapenv:Header/>
+   &lt;soapenv:Body>
+      &lt;tem:LookupCity>
+         &lt;tem:zip>gero et&lt;/tem:zip>
+      &lt;/tem:LookupCity>
+   &lt;/soapenv:Body>
+&lt;/soapenv:Envelope></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod>SOAP</soapRequestMethod>
+   <soapServiceEndpoint>https://www.crcind.com:443/csp/samples/SOAP.Demo.cls</soapServiceEndpoint>
+   <soapServiceFunction>LookupCity</soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <wsdlAddress>https://www.crcind.com/csp/samples/SOAP.Demo.CLS?WSDL=1</wsdlAddress>
+</WebServiceRequestEntity>

@@ -1,0 +1,45 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Test-demo,,,,2023-07-29 00:07:01,2023-07-29 00:07:14,12.864s,PASSED
+,,,,,,,
+Test Cases/ParameterizationAndDataDriven-Demo,,,,2023-07-29 00:07:01,2023-07-29 00:07:05,3.858s,PASSED
+"response1 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode"", [""countryName"":countryName]))",,,,2023-07-29 00:07:02,2023-07-29 00:07:04,2.024s,PASSED
+"verifyElementText(response1, ""CountryISOCodeResponse.CountryISOCodeResult"", countryCode)",,,,2023-07-29 00:07:04,2023-07-29 00:07:04,0.144s,PASSED
+"response2 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity"", [""countryCode"":countryCode]))",,,,2023-07-29 00:07:04,2023-07-29 00:07:04,0.600s,PASSED
+"verifyElementText(response2, ""CapitalCityResponse.CapitalCityResult"", capitalCountry)",,,,2023-07-29 00:07:04,2023-07-29 00:07:04,0.026s,PASSED
+"cptL = getElementPropertyValue(response2, ""CapitalCityResponse.CapitalCityResult"")",,,,2023-07-29 00:07:04,2023-07-29 00:07:05,0.033s,PASSED
+"println(""value of country code is ; "" + cptL)",,,,2023-07-29 00:07:05,2023-07-29 00:07:05,0.006s,PASSED
+CAPITAL_COUNTRY = cptL,,,,2023-07-29 00:07:05,2023-07-29 00:07:05,0.089s,PASSED
+"println(""Global variable is ; "" + CAPITAL_COUNTRY)",,,,2023-07-29 00:07:05,2023-07-29 00:07:05,0.001s,PASSED
+"response3 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryCurrency"", [""countryCode"":countryCode]))",,,,2023-07-29 00:07:05,2023-07-29 00:07:05,0.552s,PASSED
+"verifyElementText(response3, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currencyCountry)",,,,2023-07-29 00:07:05,2023-07-29 00:07:05,0.029s,PASSED
+,,,,,,,
+Test Cases/ReqResChaining_JSON_Groovy,,,,2023-07-29 00:07:05,2023-07-29 00:07:07,1.585s,PASSED
+"resp = sendRequest(findTestObject(""API Latihan/REST/GetUserList""))",,,,2023-07-29 00:07:05,2023-07-29 00:07:06,0.336s,PASSED
+slupper = new groovy.json.JsonSlurper(),,,,2023-07-29 00:07:06,2023-07-29 00:07:06,0.014s,PASSED
+result = slupper.parseText(resp.getResponseBodyContent()),,,,2023-07-29 00:07:06,2023-07-29 00:07:06,0.018s,PASSED
+value = first_name,,,,2023-07-29 00:07:06,2023-07-29 00:07:06,0.002s,PASSED
+"println("" value is "" + value)",,,,2023-07-29 00:07:06,2023-07-29 00:07:06,0.010s,PASSED
+FIRST_NAME = value,,,,2023-07-29 00:07:06,2023-07-29 00:07:06,0.000s,PASSED
+"println("" Global var First Name is : "" + FIRST_NAME)",,,,2023-07-29 00:07:06,2023-07-29 00:07:06,0.000s,PASSED
+"sendRequestAndVerify(findTestObject(""API Latihan/REST/UpdateUser"", [""name"":FIRST_NAME]))",,,,2023-07-29 00:07:06,2023-07-29 00:07:07,0.980s,PASSED
+,,,,,,,
+Test Cases/ReqResChaining_XML_Groovy,,,,2023-07-29 00:07:07,2023-07-29 00:07:12,5.470s,PASSED
+"addResponse = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service/SOAPDemoSoap/AddInteger""))",,,,2023-07-29 00:07:07,2023-07-29 00:07:09,2.288s,PASSED
+xmlbody = responseBodyContent,,,,2023-07-29 00:07:09,2023-07-29 00:07:09,0.009s,PASSED
+value = XmlParser().parseText(xmlbody),,,,2023-07-29 00:07:09,2023-07-29 00:07:09,0.015s,PASSED
+"println("" value is "" + value)",,,,2023-07-29 00:07:09,2023-07-29 00:07:09,0.000s,PASSED
+"sendRequestAndVerify(findTestObject(""API Latihan/SOAP/SOAP Service/SOAPDemoSoap/DivideInteger"", [""num1"":FIRST_NUM]))",,,,2023-07-29 00:07:09,2023-07-29 00:07:12,2.905s,PASSED
+,,,,,,,
+Test Cases/TC - GetCountryCode,,,,2023-07-29 00:07:12,2023-07-29 00:07:13,0.897s,PASSED
+"response1 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode"", [""countryName"":countryName]))",,,,2023-07-29 00:07:13,2023-07-29 00:07:13,0.580s,PASSED
+"ctrN = getElementPropertyValue(response1, ""CountryISOCodeResponse.CountryISOCodeResult"")",,,,2023-07-29 00:07:13,2023-07-29 00:07:13,0.070s,PASSED
+"println(""value of country code is ; "" + ctrN)",,,,2023-07-29 00:07:13,2023-07-29 00:07:13,0.000s,PASSED
+COUNTRY_CODE = ctrN,,,,2023-07-29 00:07:13,2023-07-29 00:07:13,0.000s,PASSED
+"println(""Global variable is ; "" + COUNTRY_CODE)",,,,2023-07-29 00:07:13,2023-07-29 00:07:13,0.000s,PASSED
+,,,,,,,
+Test Cases/TC- REST_API_List User,,,,2023-07-29 00:07:13,2023-07-29 00:07:14,0.835s,PASSED
+"sendRequest(findTestObject(""API Latihan/REST/GetUserList""))",,,,2023-07-29 00:07:13,2023-07-29 00:07:14,0.220s,PASSED
+"response = sendRequestAndVerify(findTestObject(""API Latihan/REST/GetUserList""))",,,,2023-07-29 00:07:14,2023-07-29 00:07:14,0.406s,PASSED
+"verifyElementPropertyValue(response, ""data[3].last_name"", ""Fields"")",,,,2023-07-29 00:07:14,2023-07-29 00:07:14,0.021s,PASSED
+"verifyElementsCount(response, ""data"", 6)",,,,2023-07-29 00:07:14,2023-07-29 00:07:14,0.020s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-07-29 00:07:14,2023-07-29 00:07:14,0.005s,PASSED

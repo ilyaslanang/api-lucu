@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CountryCapital,,,,2023-07-28 23:46:59,2023-07-28 23:47:03,3.794s,PASSED
+,,,,,,,
+Test Cases/TC - GetCountryCode,,,,2023-07-28 23:46:59,2023-07-28 23:47:02,2.784s,PASSED
+"response1 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode"", [""countryName"":countryName]))",,,,2023-07-28 23:46:59,2023-07-28 23:47:02,2.251s,PASSED
+"ctrN = getElementPropertyValue(response1, ""CountryISOCodeResponse.CountryISOCodeResult"")",,,,2023-07-28 23:47:02,2023-07-28 23:47:02,0.117s,PASSED
+"println(""value of country code is ; "" + ctrN)",,,,2023-07-28 23:47:02,2023-07-28 23:47:02,0.000s,PASSED
+COUNTRY_CODE = ctrN,,,,2023-07-28 23:47:02,2023-07-28 23:47:02,0.086s,PASSED
+"println(""Global variable is ; "" + COUNTRY_CODE)",,,,2023-07-28 23:47:02,2023-07-28 23:47:02,0.000s,PASSED
+,,,,,,,
+Test Cases/TC - GetCapital,,,,2023-07-28 23:47:02,2023-07-28 23:47:03,0.727s,PASSED
+"response2 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity"", [""countryCode"":COUNTRY_CODE]))",,,,2023-07-28 23:47:02,2023-07-28 23:47:03,0.566s,PASSED
+"verifyElementText(response2, ""CapitalCityResponse.CapitalCityResult"", ""Washington"")",,,,2023-07-28 23:47:03,2023-07-28 23:47:03,0.016s,PASSED

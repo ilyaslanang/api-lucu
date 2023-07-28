@@ -1,0 +1,50 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS-Country,,,,2023-07-29 00:06:41,2023-07-29 00:06:52,10.647s,PASSED
+,,,,,,,
+Test Cases/ParameterizationAndDataDriven-Demo,,,,2023-07-29 00:06:42,2023-07-29 00:06:46,4.324s,PASSED
+"response1 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode"", [""countryName"":countryName]))",,,,2023-07-29 00:06:42,2023-07-29 00:06:44,2.180s,PASSED
+"verifyElementText(response1, ""CountryISOCodeResponse.CountryISOCodeResult"", countryCode)",,,,2023-07-29 00:06:44,2023-07-29 00:06:44,0.146s,PASSED
+"response2 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity"", [""countryCode"":countryCode]))",,,,2023-07-29 00:06:44,2023-07-29 00:06:45,0.853s,PASSED
+"verifyElementText(response2, ""CapitalCityResponse.CapitalCityResult"", capitalCountry)",,,,2023-07-29 00:06:45,2023-07-29 00:06:45,0.035s,PASSED
+"cptL = getElementPropertyValue(response2, ""CapitalCityResponse.CapitalCityResult"")",,,,2023-07-29 00:06:45,2023-07-29 00:06:45,0.036s,PASSED
+"println(""value of country code is ; "" + cptL)",,,,2023-07-29 00:06:45,2023-07-29 00:06:45,0.000s,PASSED
+CAPITAL_COUNTRY = cptL,,,,2023-07-29 00:06:45,2023-07-29 00:06:46,0.092s,PASSED
+"println(""Global variable is ; "" + CAPITAL_COUNTRY)",,,,2023-07-29 00:06:46,2023-07-29 00:06:46,0.000s,PASSED
+"response3 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryCurrency"", [""countryCode"":countryCode]))",,,,2023-07-29 00:06:46,2023-07-29 00:06:46,0.558s,PASSED
+"verifyElementText(response3, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currencyCountry)",,,,2023-07-29 00:06:46,2023-07-29 00:06:46,0.034s,PASSED
+,,,,,,,
+Test Cases/ParameterizationAndDataDriven-Demo,,,,2023-07-29 00:06:46,2023-07-29 00:06:48,2.156s,PASSED
+"response1 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode"", [""countryName"":countryName]))",,,,2023-07-29 00:06:46,2023-07-29 00:06:47,0.781s,PASSED
+"verifyElementText(response1, ""CountryISOCodeResponse.CountryISOCodeResult"", countryCode)",,,,2023-07-29 00:06:47,2023-07-29 00:06:47,0.045s,PASSED
+"response2 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity"", [""countryCode"":countryCode]))",,,,2023-07-29 00:06:47,2023-07-29 00:06:48,0.601s,PASSED
+"verifyElementText(response2, ""CapitalCityResponse.CapitalCityResult"", capitalCountry)",,,,2023-07-29 00:06:48,2023-07-29 00:06:48,0.043s,PASSED
+"cptL = getElementPropertyValue(response2, ""CapitalCityResponse.CapitalCityResult"")",,,,2023-07-29 00:06:48,2023-07-29 00:06:48,0.022s,PASSED
+"println(""value of country code is ; "" + cptL)",,,,2023-07-29 00:06:48,2023-07-29 00:06:48,0.000s,PASSED
+CAPITAL_COUNTRY = cptL,,,,2023-07-29 00:06:48,2023-07-29 00:06:48,0.000s,PASSED
+"println(""Global variable is ; "" + CAPITAL_COUNTRY)",,,,2023-07-29 00:06:48,2023-07-29 00:06:48,0.000s,PASSED
+"response3 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryCurrency"", [""countryCode"":countryCode]))",,,,2023-07-29 00:06:48,2023-07-29 00:06:48,0.568s,PASSED
+"verifyElementText(response3, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currencyCountry)",,,,2023-07-29 00:06:48,2023-07-29 00:06:48,0.076s,PASSED
+,,,,,,,
+Test Cases/ParameterizationAndDataDriven-Demo,,,,2023-07-29 00:06:48,2023-07-29 00:06:50,2.017s,PASSED
+"response1 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode"", [""countryName"":countryName]))",,,,2023-07-29 00:06:48,2023-07-29 00:06:49,0.583s,PASSED
+"verifyElementText(response1, ""CountryISOCodeResponse.CountryISOCodeResult"", countryCode)",,,,2023-07-29 00:06:49,2023-07-29 00:06:49,0.057s,PASSED
+"response2 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity"", [""countryCode"":countryCode]))",,,,2023-07-29 00:06:49,2023-07-29 00:06:50,0.805s,PASSED
+"verifyElementText(response2, ""CapitalCityResponse.CapitalCityResult"", capitalCountry)",,,,2023-07-29 00:06:50,2023-07-29 00:06:50,0.019s,PASSED
+"cptL = getElementPropertyValue(response2, ""CapitalCityResponse.CapitalCityResult"")",,,,2023-07-29 00:06:50,2023-07-29 00:06:50,0.015s,PASSED
+"println(""value of country code is ; "" + cptL)",,,,2023-07-29 00:06:50,2023-07-29 00:06:50,0.001s,PASSED
+CAPITAL_COUNTRY = cptL,,,,2023-07-29 00:06:50,2023-07-29 00:06:50,0.001s,PASSED
+"println(""Global variable is ; "" + CAPITAL_COUNTRY)",,,,2023-07-29 00:06:50,2023-07-29 00:06:50,0.000s,PASSED
+"response3 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryCurrency"", [""countryCode"":countryCode]))",,,,2023-07-29 00:06:50,2023-07-29 00:06:50,0.516s,PASSED
+"verifyElementText(response3, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currencyCountry)",,,,2023-07-29 00:06:50,2023-07-29 00:06:50,0.016s,PASSED
+,,,,,,,
+Test Cases/ParameterizationAndDataDriven-Demo,,,,2023-07-29 00:06:50,2023-07-29 00:06:52,1.684s,PASSED
+"response1 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode"", [""countryName"":countryName]))",,,,2023-07-29 00:06:50,2023-07-29 00:06:51,0.531s,PASSED
+"verifyElementText(response1, ""CountryISOCodeResponse.CountryISOCodeResult"", countryCode)",,,,2023-07-29 00:06:51,2023-07-29 00:06:51,0.019s,PASSED
+"response2 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity"", [""countryCode"":countryCode]))",,,,2023-07-29 00:06:51,2023-07-29 00:06:52,0.541s,PASSED
+"verifyElementText(response2, ""CapitalCityResponse.CapitalCityResult"", capitalCountry)",,,,2023-07-29 00:06:52,2023-07-29 00:06:52,0.027s,PASSED
+"cptL = getElementPropertyValue(response2, ""CapitalCityResponse.CapitalCityResult"")",,,,2023-07-29 00:06:52,2023-07-29 00:06:52,0.013s,PASSED
+"println(""value of country code is ; "" + cptL)",,,,2023-07-29 00:06:52,2023-07-29 00:06:52,0.000s,PASSED
+CAPITAL_COUNTRY = cptL,,,,2023-07-29 00:06:52,2023-07-29 00:06:52,0.000s,PASSED
+"println(""Global variable is ; "" + CAPITAL_COUNTRY)",,,,2023-07-29 00:06:52,2023-07-29 00:06:52,0.000s,PASSED
+"response3 = sendRequest(findTestObject(""API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryCurrency"", [""countryCode"":countryCode]))",,,,2023-07-29 00:06:52,2023-07-29 00:06:52,0.524s,PASSED
+"verifyElementText(response3, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", currencyCountry)",,,,2023-07-29 00:06:52,2023-07-29 00:06:52,0.019s,PASSED

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TS-Country</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>754f4212-861d-4ac8-8d24-25835b73b1e2</testSuiteGuid>
+   <testCaseLink>
+      <guid>e06c423f-7799-4602-bcf3-77b4da7cd928</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/ParameterizationAndDataDriven-Demo</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0258adc2-d23c-4957-b00c-535e225ad0b7</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/country_data</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>0258adc2-d23c-4957-b00c-535e225ad0b7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>countryName</value>
+         <variableId>bd87e718-eb2d-4082-b02d-468cd79f4527</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0258adc2-d23c-4957-b00c-535e225ad0b7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>countryCode</value>
+         <variableId>17621286-5a85-495a-883a-8d3140cd8dd0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0258adc2-d23c-4957-b00c-535e225ad0b7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>capitalCountry</value>
+         <variableId>5064ddfc-255c-4120-a6f5-feaf9046b275</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0258adc2-d23c-4957-b00c-535e225ad0b7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>currencyCountry</value>
+         <variableId>076d7294-ab92-4562-8f5d-710c77b14a00</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

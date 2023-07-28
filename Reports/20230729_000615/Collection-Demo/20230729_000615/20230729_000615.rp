@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportCollectionEntity>
+   <description></description>
+   <name>20230729_000615</name>
+   <tag></tag>
+   <displayName>20230729_000615</displayName>
+   <reportItemDescriptions>
+      <ReportItemDescription>
+         <reportLocation>Reports/20230729_000615/CountryCapital/20230729_000616</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Service</groupName>
+            <profileName>default</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Web Service</runConfigurationId>
+         </runConfigDescription>
+         <testCaseAmount>0</testCaseAmount>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20230729_000615/Test-demo/20230729_000618</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Service</groupName>
+            <profileName>default</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Web Service</runConfigurationId>
+         </runConfigDescription>
+         <testCaseAmount>0</testCaseAmount>
+      </ReportItemDescription>
+      <ReportItemDescription>
+         <reportLocation>Reports/20230729_000615/TS-Country/20230729_000620</reportLocation>
+         <runConfigDescription>
+            <groupName>Web Service</groupName>
+            <profileName>default</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Web Service</runConfigurationId>
+         </runConfigDescription>
+         <testCaseAmount>0</testCaseAmount>
+      </ReportItemDescription>
+   </reportItemDescriptions>
+   <testSuiteCollectionId>Test Suites/Collection-Demo</testSuiteCollectionId>
+</ReportCollectionEntity>

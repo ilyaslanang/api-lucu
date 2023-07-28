@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS-Country" time="10.708" tests="4" failures="0" errors="0">
+   <testsuite name="TS-Country" tests="4" failures="0" errors="0" time="10.708" skipped="0" timestamp="2023-07-29 00:07:48" hostname="acer - anehsialan" id="Test Suites/TS-Country">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\Katalon\\API Testing - Latihan\\Reports\\20230729_000615\\TS-Country\\20230729_000620"/>
+         <property name="logFiles" value="D:\\Katalon\\API Testing - Latihan\\Reports\\20230729_000615\\TS-Country\\20230729_000620\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="acer - anehsialan"/>
+         <property name="hostAddress" value="192.168.161.170"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="8.6.5.208"/>
+      </properties>
+      <testcase name="Test Cases/ParameterizationAndDataDriven-Demo" time="4.069" classname="Test Cases/ParameterizationAndDataDriven-Demo" status="PASSED">
+         <system-out><![CDATA[2023-07-29 00:07:49 - [TEST_CASE][PASSED] - Test Cases/ParameterizationAndDataDriven-Demo: Test Cases/ParameterizationAndDataDriven-Demo
+
+2023-07-29 00:07:49 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode", ["countryName":countryName])): Send request successfully
+
+2023-07-29 00:07:51 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\0.har
+
+2023-07-29 00:07:51 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:51 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryISOCodeResponse.CountryISOCodeResult", countryCode): Verify element text successfully
+
+2023-07-29 00:07:52 - [MESSAGE][PASSED] - Verify element text successfully
+
+2023-07-29 00:07:52 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity", ["countryCode":countryCode])): Send request successfully
+
+2023-07-29 00:07:52 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\1.har
+
+2023-07-29 00:07:52 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:52 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", capitalCountry): Verify element text successfully
+
+2023-07-29 00:07:52 - [MESSAGE][PASSED] - Verify element text successfully
+
+2023-07-29 00:07:52 - [TEST_STEP][PASSED] - cptL = getElementPropertyValue(response2, "CapitalCityResponse.CapitalCityResult"): null
+
+2023-07-29 00:07:52 - [TEST_STEP][PASSED] - println("value of country code is ; " + cptL): null
+
+2023-07-29 00:07:52 - [TEST_STEP][PASSED] - CAPITAL_COUNTRY = cptL: null
+
+2023-07-29 00:07:52 - [TEST_STEP][PASSED] - println("Global variable is ; " + CAPITAL_COUNTRY): null
+
+2023-07-29 00:07:52 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryCurrency", ["countryCode":countryCode])): Send request successfully
+
+2023-07-29 00:07:53 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\2.har
+
+2023-07-29 00:07:53 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:53 - [TEST_STEP][PASSED] - verifyElementText(response3, "CountryCurrencyResponse.CountryCurrencyResult.sName", currencyCountry): Verify element text successfully
+
+2023-07-29 00:07:53 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ParameterizationAndDataDriven-Demo" time="1.82" classname="Test Cases/ParameterizationAndDataDriven-Demo" status="PASSED">
+         <system-out><![CDATA[2023-07-29 00:07:53 - [TEST_CASE][PASSED] - Test Cases/ParameterizationAndDataDriven-Demo: Test Cases/ParameterizationAndDataDriven-Demo
+
+2023-07-29 00:07:53 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode", ["countryName":countryName])): Send request successfully
+
+2023-07-29 00:07:54 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\3.har
+
+2023-07-29 00:07:54 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:54 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryISOCodeResponse.CountryISOCodeResult", countryCode): Verify element text successfully
+
+2023-07-29 00:07:54 - [MESSAGE][PASSED] - Verify element text successfully
+
+2023-07-29 00:07:54 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity", ["countryCode":countryCode])): Send request successfully
+
+2023-07-29 00:07:54 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\4.har
+
+2023-07-29 00:07:54 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:54 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", capitalCountry): Verify element text successfully
+
+2023-07-29 00:07:54 - [MESSAGE][PASSED] - Verify element text successfully
+
+2023-07-29 00:07:54 - [TEST_STEP][PASSED] - cptL = getElementPropertyValue(response2, "CapitalCityResponse.CapitalCityResult"): null
+
+2023-07-29 00:07:54 - [TEST_STEP][PASSED] - println("value of country code is ; " + cptL): null
+
+2023-07-29 00:07:54 - [TEST_STEP][PASSED] - CAPITAL_COUNTRY = cptL: null
+
+2023-07-29 00:07:54 - [TEST_STEP][PASSED] - println("Global variable is ; " + CAPITAL_COUNTRY): null
+
+2023-07-29 00:07:54 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryCurrency", ["countryCode":countryCode])): Send request successfully
+
+2023-07-29 00:07:55 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\5.har
+
+2023-07-29 00:07:55 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:55 - [TEST_STEP][PASSED] - verifyElementText(response3, "CountryCurrencyResponse.CountryCurrencyResult.sName", currencyCountry): Verify element text successfully
+
+2023-07-29 00:07:55 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ParameterizationAndDataDriven-Demo" time="2.711" classname="Test Cases/ParameterizationAndDataDriven-Demo" status="PASSED">
+         <system-out><![CDATA[2023-07-29 00:07:55 - [TEST_CASE][PASSED] - Test Cases/ParameterizationAndDataDriven-Demo: Test Cases/ParameterizationAndDataDriven-Demo
+
+2023-07-29 00:07:55 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode", ["countryName":countryName])): Send request successfully
+
+2023-07-29 00:07:56 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\6.har
+
+2023-07-29 00:07:56 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:56 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryISOCodeResponse.CountryISOCodeResult", countryCode): Verify element text successfully
+
+2023-07-29 00:07:56 - [MESSAGE][PASSED] - Verify element text successfully
+
+2023-07-29 00:07:56 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity", ["countryCode":countryCode])): Send request successfully
+
+2023-07-29 00:07:57 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\7.har
+
+2023-07-29 00:07:57 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:57 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", capitalCountry): Verify element text successfully
+
+2023-07-29 00:07:57 - [MESSAGE][PASSED] - Verify element text successfully
+
+2023-07-29 00:07:57 - [TEST_STEP][PASSED] - cptL = getElementPropertyValue(response2, "CapitalCityResponse.CapitalCityResult"): null
+
+2023-07-29 00:07:57 - [TEST_STEP][PASSED] - println("value of country code is ; " + cptL): null
+
+2023-07-29 00:07:57 - [TEST_STEP][PASSED] - CAPITAL_COUNTRY = cptL: null
+
+2023-07-29 00:07:57 - [TEST_STEP][PASSED] - println("Global variable is ; " + CAPITAL_COUNTRY): null
+
+2023-07-29 00:07:57 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryCurrency", ["countryCode":countryCode])): Send request successfully
+
+2023-07-29 00:07:58 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\8.har
+
+2023-07-29 00:07:58 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:58 - [TEST_STEP][PASSED] - verifyElementText(response3, "CountryCurrencyResponse.CountryCurrencyResult.sName", currencyCountry): Verify element text successfully
+
+2023-07-29 00:07:58 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/ParameterizationAndDataDriven-Demo" time="1.64" classname="Test Cases/ParameterizationAndDataDriven-Demo" status="PASSED">
+         <system-out><![CDATA[2023-07-29 00:07:58 - [TEST_CASE][PASSED] - Test Cases/ParameterizationAndDataDriven-Demo: Test Cases/ParameterizationAndDataDriven-Demo
+
+2023-07-29 00:07:58 - [TEST_STEP][PASSED] - response1 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryISOCode", ["countryName":countryName])): Send request successfully
+
+2023-07-29 00:07:58 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\9.har
+
+2023-07-29 00:07:58 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:58 - [TEST_STEP][PASSED] - verifyElementText(response1, "CountryISOCodeResponse.CountryISOCodeResult", countryCode): Verify element text successfully
+
+2023-07-29 00:07:58 - [MESSAGE][PASSED] - Verify element text successfully
+
+2023-07-29 00:07:58 - [TEST_STEP][PASSED] - response2 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CapitalCity", ["countryCode":countryCode])): Send request successfully
+
+2023-07-29 00:07:59 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\10.har
+
+2023-07-29 00:07:59 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:59 - [TEST_STEP][PASSED] - verifyElementText(response2, "CapitalCityResponse.CapitalCityResult", capitalCountry): Verify element text successfully
+
+2023-07-29 00:07:59 - [MESSAGE][PASSED] - Verify element text successfully
+
+2023-07-29 00:07:59 - [TEST_STEP][PASSED] - cptL = getElementPropertyValue(response2, "CapitalCityResponse.CapitalCityResult"): null
+
+2023-07-29 00:07:59 - [TEST_STEP][PASSED] - println("value of country code is ; " + cptL): null
+
+2023-07-29 00:07:59 - [TEST_STEP][PASSED] - CAPITAL_COUNTRY = cptL: null
+
+2023-07-29 00:07:59 - [TEST_STEP][PASSED] - println("Global variable is ; " + CAPITAL_COUNTRY): null
+
+2023-07-29 00:07:59 - [TEST_STEP][PASSED] - response3 = sendRequest(findTestObject("API Latihan/SOAP/SOAP Service (1)/CountryInfoServiceSoapBinding/CountryCurrency", ["countryCode":countryCode])): Send request successfully
+
+2023-07-29 00:07:59 - [MESSAGE][INFO] - HAR: D:\Katalon\API Testing - Latihan\Reports\20230729_000615\TS-Country\20230729_000620\requests\main\11.har
+
+2023-07-29 00:07:59 - [MESSAGE][PASSED] - Send request successfully
+
+2023-07-29 00:07:59 - [TEST_STEP][PASSED] - verifyElementText(response3, "CountryCurrencyResponse.CountryCurrencyResult.sName", currencyCountry): Verify element text successfully
+
+2023-07-29 00:07:59 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-07-29 00:07:48 - [TEST_SUITE][PASSED] - TS-Country: Test Cases/ParameterizationAndDataDriven-Demo]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

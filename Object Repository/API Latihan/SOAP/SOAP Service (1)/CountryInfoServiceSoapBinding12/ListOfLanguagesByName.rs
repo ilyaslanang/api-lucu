@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>ListOfLanguagesByName</name>
+   <tag></tag>
+   <elementGuidId>96c5f6be-35fd-4b3d-a0cb-b22730a45a8d</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <autoUpdateContent>true</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>text/xml; charset=utf-8</value>
+      <webElementGuid>c1b80f8f-9abe-4b73-a915-676e5d0a8bdf</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.6.5</katalonVersion>
+   <maxResponseSize>-1</maxResponseSize>
+   <restRequestMethod></restRequestMethod>
+   <restUrl></restUrl>
+   <serviceType>SOAP</serviceType>
+   <soapBody>&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot; xmlns:web=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;>
+   &lt;soap:Header/>
+   &lt;soap:Body>
+      &lt;web:ListOfLanguagesByName/>
+   &lt;/soap:Body>
+&lt;/soap:Envelope></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod>SOAP12</soapRequestMethod>
+   <soapServiceEndpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</soapServiceEndpoint>
+   <soapServiceFunction>ListOfLanguagesByName</soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
+</WebServiceRequestEntity>
